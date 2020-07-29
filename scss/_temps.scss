@@ -1,0 +1,13 @@
+$backgroundColor: #ffffff;
+$fontWhite: #ffffff;
+
+@mixin fixedFooterHeader {
+  @extend %flexRow;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 3%;
+  width: 100%;
+  position: fixed;
+  background-color: $backgroundColor;
+}

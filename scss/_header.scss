@@ -1,0 +1,30 @@
+@import "temps";
+
+.header__container {
+  @include fixedFooterHeader;
+
+  .header__fire {
+    height: 2.2rem;
+    width: 1.6rem;
+  }
+
+  .header__title {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+
+    .header__dropdown {
+      width: 0.9rem;
+      height: 0.6rem;
+    }
+    .header__title--live {
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+  }
+
+  .header__search {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+}

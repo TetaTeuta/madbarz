@@ -1,0 +1,36 @@
+@import "temps";
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 100%;
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.feed__container {
+  margin-top: 5rem;
+  margin-bottom: -5rem; // this part keeps footer and header fixed
+  width: 100%;
+}
