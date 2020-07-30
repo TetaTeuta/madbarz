@@ -12,10 +12,9 @@ a:visited {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 100%;
-  background-color: $backgroundColor;
-  display: flex;
-  flex-direction: column;
+  width: 103%;
+  background-color: #e5e5e5;
+  @extend %flexColumn;
   align-items: flex-start;
 }
 

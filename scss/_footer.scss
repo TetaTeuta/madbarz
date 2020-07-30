@@ -1,7 +1,9 @@
 @import "temps";
 
 .footer__container {
-  background-color: aquamarine;
+  @extend %flexRow;
+  justify-content: space-between;
+  background-color: $backgroundColor;
   width: 100%;
-  position: absolute;
+  min-height: 3.2rem;
 }
