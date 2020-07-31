@@ -1,9 +1,10 @@
 @import "temps";
 
 .footer__container {
-  @extend %flexRow;
-  justify-content: space-between;
-  background-color: $backgroundColor;
-  width: 100%;
-  min-height: 3.2rem;
+  @include fixedFooterHeader;
+  // @extend %flexRow;
+  // justify-content: space-between;
+  // background-color: $backgroundColor;
+  // width: 100%;
+  // position: relative;
 }

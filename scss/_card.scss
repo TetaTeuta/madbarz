@@ -5,11 +5,40 @@
   margin-bottom: 2%;
 }
 
+////////////////////////////////////////////// CARD HEADER ////////////////////////////////////////////////////
+
 .card__header {
+  @extend %flexRow;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   background-color: $backgroundColor;
   padding: 3%;
+
+  .card__avatar {
+    margin-right: 3%;
+  }
+
+  .card__username {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .card__featured {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: $fontOrange;
+    text-align: left;
+  }
+  .card__timePosted {
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: $fontGray;
+    margin-left: auto;
+  }
 }
+
+/////////////////////////////////////////// MIDDLE PART OF THE CARD ///////////////////////////////////////////
 
 .card__middle {
   @extend %flexColumn;
@@ -25,30 +54,32 @@
     rgba(0, 0, 0, 0) 35.11%,
     #000000 99.85%
   );
+
+  .card__time {
+    max-width: 20%;
+    color: $fontWhite;
+    background-color: #000000;
+    opacity: 0.7;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding-top: 3%;
+  }
+
+  .card__text {
+    color: $fontWhite;
+    padding-top: 3%;
+  }
 }
 
-.card__time {
-  max-width: 20%;
-  color: $fontWhite;
-  background: #000000;
-  opacity: 0.7;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2%;
-}
-
-.card__title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #ffffff;
-  padding-top: 3%;
-}
-
-.card__text {
-  color: $fontWhite;
-  padding-top: 3%;
-}
+///////////////////////////////////////////////// CARD FOOTER ///////////////////////////////////////////////////
 
 .card__bottom {
   @extend %flexRow;
@@ -56,16 +87,17 @@
   width: 100%;
   padding: 4%;
   background-color: $backgroundColor;
-}
 
-.card__bottom--share {
-  margin-right: auto;
-}
+  .card__bottom--share {
+    margin-right: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
-.card__bottom--commentNumber,
-.card__bottom--comment,
-.card__bottom--like,
-.card__bottom--likeNumber {
-  align-items: center;
-  margin: 1%;
+  .card__bottom--commentNumber,
+  .card__bottom--comment,
+  .card__bottom--like,
+  .card__bottom--likeNumber {
+    margin: 2%;
+  }
 }

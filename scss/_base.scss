@@ -12,10 +12,11 @@ a:visited {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 103%;
+  width: 102%;
   background-color: #e5e5e5;
+  margin: 0;
   @extend %flexColumn;
-  align-items: flex-start;
+  min-height: 100vh;
 }
 
 %flexColumn {
@@ -29,7 +30,7 @@ body {
 }
 
 .feed__container {
-  margin-top: 5rem;
-  margin-bottom: -5rem; // this part keeps footer and header fixed
+  margin-top: auto;
+  // margin-bottom: -5rem;
   width: 100%;
 }

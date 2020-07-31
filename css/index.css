@@ -11,11 +11,10 @@ a:visited {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 103%;
+  width: 102%;
   background-color: #e5e5e5;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin: 0;
+  min-height: 100vh;
 }
 
 body, .card__container, .card__middle {
@@ -28,7 +27,7 @@ body, .card__container, .card__middle {
           flex-direction: column;
 }
 
-.card__bottom, .footer__container, .header__container {
+.card__header, .card__bottom, .footer__container, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,8 +38,7 @@ body, .card__container, .card__middle {
 }
 
 .feed__container {
-  margin-top: 5rem;
-  margin-bottom: -5rem;
+  margin-top: auto;
   width: 100%;
 }
 
@@ -49,9 +47,39 @@ body, .card__container, .card__middle {
 }
 
 .card__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background-color: #ffffff;
   padding: 3%;
+}
+
+.card__header .card__avatar {
+  margin-right: 3%;
+}
+
+.card__header .card__username {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.card__header .card__featured {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #ff8f00;
+  text-align: left;
+}
+
+.card__header .card__timePosted {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #747474;
+  margin-left: auto;
 }
 
 .card__middle {
@@ -67,17 +95,17 @@ body, .card__container, .card__middle {
   background: linear-gradient(179.86deg, rgba(0, 0, 0, 0) 35.11%, #000000 99.85%);
 }
 
-.card__time {
+.card__middle .card__time {
   max-width: 20%;
   color: #ffffff;
-  background: #000000;
+  background-color: #000000;
   opacity: 0.7;
   border-radius: 5px;
   text-align: center;
   padding: 2%;
 }
 
-.card__title {
+.card__middle .card__title {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -85,7 +113,7 @@ body, .card__container, .card__middle {
   padding-top: 3%;
 }
 
-.card__text {
+.card__middle .card__text {
   color: #ffffff;
   padding-top: 3%;
 }
@@ -99,27 +127,30 @@ body, .card__container, .card__middle {
   background-color: #ffffff;
 }
 
-.card__bottom--share {
+.card__bottom .card__bottom--share {
   margin-right: auto;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.card__bottom--commentNumber,
-.card__bottom--comment,
-.card__bottom--like,
-.card__bottom--likeNumber {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1%;
+.card__bottom .card__bottom--commentNumber,
+.card__bottom .card__bottom--comment,
+.card__bottom .card__bottom--like,
+.card__bottom .card__bottom--likeNumber {
+  margin: 2%;
 }
 
 .footer__container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  padding: 3% 5%;
   width: 100%;
-  min-height: 3.2rem;
+  background-color: #ffffff;
 }
 
 .header__container {
@@ -130,10 +161,10 @@ body, .card__container, .card__middle {
       -ms-flex-align: center;
           align-items: center;
   height: 5rem;
-  padding: 3%;
+  padding: 3% 5%;
   width: 100%;
-  position: fixed;
   background-color: #ffffff;
+  position: fixed;
   border: 1px solid #e5e5e5;
 }
 
