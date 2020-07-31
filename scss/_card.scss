@@ -56,15 +56,20 @@
     #000000 99.85%
   );
 
-  .card__time {
-    max-width: 20%;
-    color: $fontWhite;
-    background-color: #000000;
-    opacity: 0.7;
-    border-radius: 5px;
-    text-align: center;
-    padding: 2%;
-  }
+  // .card__time {
+  //   max-width: 20%;
+  //   color: $fontWhite;
+  //   font-size: 13px;
+  //   background-color: #000000;
+  //   opacity: 0.7;
+  //   border-radius: 5px;
+  //   text-align: center;
+  //   padding: 2%;
+
+  //   .card__time--icon {
+  //     color: #ffffff;
+  //   }
+  // }
 
   .card__title {
     font-size: 1.5rem;
