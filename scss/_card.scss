@@ -2,7 +2,8 @@
 
 .card__container {
   @extend %flexColumn;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
+  height: 29rem;
 }
 
 ////////////////////////////////////////////// CARD HEADER ////////////////////////////////////////////////////
@@ -44,7 +45,7 @@
   @extend %flexColumn;
   justify-content: flex-end;
   width: 100%;
-  height: 29rem;
+  min-height: 22rem;
   padding: 8%;
   background-image: url("../assets/backimg.png");
   background-repeat: no-repeat;

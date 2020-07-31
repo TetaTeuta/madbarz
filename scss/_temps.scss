@@ -6,10 +6,21 @@ $fontOrange: #ff8f00;
 
 @mixin fixedFooterHeader {
   @extend %flexRow;
+
   justify-content: space-between;
   align-items: center;
   height: 5rem;
   padding: 3% 5%;
   width: 100%;
   background-color: $backgroundColor;
+}
+
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexRow {
+  display: flex;
+  flex-direction: row;
 }

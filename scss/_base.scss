@@ -3,6 +3,8 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 a:visited {
@@ -12,25 +14,13 @@ a:visited {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 102%;
+  width: 100%;
   background-color: #e5e5e5;
-  margin: 0;
   @extend %flexColumn;
-  min-height: 100vh;
-}
-
-%flexColumn {
-  display: flex;
-  flex-direction: column;
-}
-
-%flexRow {
-  display: flex;
-  flex-direction: row;
+  padding-bottom: 5rem;
 }
 
 .feed__container {
-  margin-top: auto;
-  // margin-bottom: -5rem;
+  margin-top: 5rem;
   width: 100%;
 }

@@ -2,9 +2,6 @@
 
 .footer__container {
   @include fixedFooterHeader;
-  // @extend %flexRow;
-  // justify-content: space-between;
-  // background-color: $backgroundColor;
-  // width: 100%;
-  // position: relative;
+  position: fixed;
+  bottom: 0;
 }

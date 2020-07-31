@@ -2,8 +2,8 @@
 
 .header__container {
   @include fixedFooterHeader;
-  position: fixed;
   border: 1px solid #e5e5e5;
+  position: fixed;
 
   .header__fire {
     height: 2.2rem;
