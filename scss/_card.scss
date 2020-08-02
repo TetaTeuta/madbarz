@@ -2,19 +2,14 @@
 
 .card__container {
   @extend %flexColumn;
-  margin-bottom: 4%;
-  height: 29rem;
+  margin-bottom: 2%;
+  height: 65%;
 }
 
 ////////////////////////////////////////////// CARD HEADER ////////////////////////////////////////////////////
 
 .card__header {
-  @extend %flexRow;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  background-color: $backgroundColor;
-  padding: 3%;
+  @include cardHeaderFooter;
 
   .card__avatar {
     margin-right: 3%;
@@ -32,7 +27,6 @@
     text-align: left;
   }
   .card__timePosted {
-    font-weight: normal;
     font-size: 0.8rem;
     color: $fontGray;
     margin-left: auto;
@@ -45,16 +39,16 @@
   @extend %flexColumn;
   justify-content: flex-end;
   width: 100%;
-  min-height: 22rem;
+  height: 100%;
   padding: 8%;
-  background-image: url("../assets/backimg.png");
+  background-image: linear-gradient(
+      179.86deg,
+      rgba(0, 0, 0, 0) 35.11%,
+      #000000 99.85%
+    ),
+    url(../assets/backimg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(
-    179.86deg,
-    rgba(0, 0, 0, 0) 35.11%,
-    #000000 99.85%
-  );
 
   .card__title {
     font-size: 1.5rem;
@@ -73,11 +67,7 @@
 ///////////////////////////////////////////////// CARD FOOTER ///////////////////////////////////////////////////
 
 .card__bottom {
-  @extend %flexRow;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 4%;
-  background-color: $backgroundColor;
+  @include cardHeaderFooter;
 
   .card__bottom--share {
     margin-right: auto;
