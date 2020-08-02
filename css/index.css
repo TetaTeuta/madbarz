@@ -44,7 +44,7 @@ body {
 .feed__container {
   margin-top: 4rem;
   width: 100%;
-  height: 100vh;
+  height: 90%;
 }
 
 body, .card__container, .card__middle {
@@ -69,7 +69,7 @@ body, .card__container, .card__middle {
 
 .card__container {
   margin-bottom: 2%;
-  height: 70%;
+  height: 70vh;
 }
 
 .card__header {
