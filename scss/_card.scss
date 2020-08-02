@@ -3,7 +3,7 @@
 .card__container {
   @extend %flexColumn;
   margin-bottom: 2%;
-  height: 65%;
+  height: 70%;
 }
 
 ////////////////////////////////////////////// CARD HEADER ////////////////////////////////////////////////////
@@ -75,10 +75,8 @@
     height: 1.5rem;
   }
 
-  .card__bottom--commentNumber,
-  .card__bottom--comment,
-  .card__bottom--like,
-  .card__bottom--likeNumber {
+  .card__bottom > img,
+  div {
     margin: 2%;
   }
 }

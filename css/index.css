@@ -38,7 +38,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .feed__container {
@@ -69,7 +69,7 @@ body, .card__container, .card__middle {
 
 .card__container {
   margin-bottom: 2%;
-  height: 65%;
+  height: 70%;
 }
 
 .card__header {
@@ -152,10 +152,8 @@ body, .card__container, .card__middle {
   height: 1.5rem;
 }
 
-.card__bottom .card__bottom--commentNumber,
-.card__bottom .card__bottom--comment,
-.card__bottom .card__bottom--like,
-.card__bottom .card__bottom--likeNumber {
+.card__bottom .card__bottom > img,
+.card__bottom div {
   margin: 2%;
 }
 
