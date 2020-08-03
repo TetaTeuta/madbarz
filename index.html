@@ -25,7 +25,7 @@
     <!--------------------------------------------- BEGINNING OF FEED ----------------------------------------------------->
 
     <main class="feed__container">
-      <!--------------------------------------------- SINGLE CARD ----------------------------------------------------->
+      <div id="reactRoot"></div>
 
       <div class="card__container">
         <div class="card__header">
@@ -56,8 +56,6 @@
         </div>
       </div>
 
-      <!--------------------------------------------- SINGLE CARD ----------------------------------------------------->
-
       <div class="card__container">
         <div class="card__header">
           <img class="card__avatar" src="assets/avatar.png" />
@@ -68,7 +66,7 @@
           <div class="card__timePosted">1d ago</div>
         </div>
 
-        <div class="card__middle" styles="background-image: './'">
+        <div class="card__middle">
           <div class="card__time">
             <img class="card__time--icon" src="assets/clock.png" />
           </div>
@@ -86,8 +84,6 @@
           <div class="card__bottom--likeNumber">12</div>
         </div>
       </div>
-
-      <!--------------------------------------------- SINGLE CARD ----------------------------------------------------->
 
       <div class="card__container">
         <div class="card__header">
@@ -128,5 +124,17 @@
       <img class="footer__notifications" src="assets/notification.png" />
       <img class="footer__profile" src="assets/profile.png" />
     </footer>
+
+    <!------------------------------------------------------ SCRIPTS ----------------------------------------------------->
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="./feed-dist.js"></script>
   </body>
 </html>
