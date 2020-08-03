@@ -1,4 +1,4 @@
-body, .card__container, .card__middle {
+body, .card__container, .card__middle, .card__middle--img2, .card__middle--img3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@ body {
   height: 90%;
 }
 
-body, .card__container, .card__middle {
+body, .card__container, .card__middle, .card__middle--img2, .card__middle--img3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +92,7 @@ body, .card__container, .card__middle {
 .card__header .card__username {
   font-weight: 600;
   font-size: 0.9rem;
-  text-align: center;
+  text-align: left;
 }
 
 .card__header .card__featured {
@@ -108,19 +108,19 @@ body, .card__container, .card__middle {
   margin-left: auto;
 }
 
-.card__middle {
+.card__middle, .card__middle--img2, .card__middle--img3 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
   height: 100%;
   padding: 8%;
-  background-image: linear-gradient(179.86deg, rgba(0, 0, 0, 0) 35.11%, #000000 99.85%), url(../assets/backimg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(179.86deg, rgba(0, 0, 0, 0) 35.11%, #000000 99.85%), url(../assets/backimg.png);
 }
 
-.card__middle .card__title {
+.card__middle .card__title, .card__middle--img2 .card__title, .card__middle--img3 .card__title {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -128,9 +128,17 @@ body, .card__container, .card__middle {
   padding-top: 3%;
 }
 
-.card__middle .card__text {
+.card__middle .card__text, .card__middle--img2 .card__text, .card__middle--img3 .card__text {
   color: #ffffff;
   padding-top: 3%;
+}
+
+.card__middle--img2 {
+  background-image: linear-gradient(179.86deg, rgba(0, 0, 0, 0) 35.11%, #000000 99.85%), url(../assets/backimg3.png);
+}
+
+.card__middle--img3 {
+  background-image: linear-gradient(179.86deg, rgba(0, 0, 0, 0) 35.11%, #000000 99.85%), url(../assets/backimg2.png);
 }
 
 .card__bottom {
@@ -157,7 +165,7 @@ body, .card__container, .card__middle {
   margin: 2%;
 }
 
-body, .card__container, .card__middle {
+body, .card__container, .card__middle, .card__middle--img2, .card__middle--img3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +211,7 @@ body, .card__container, .card__middle {
   }
 }
 
-body, .card__container, .card__middle {
+body, .card__container, .card__middle, .card__middle--img2, .card__middle--img3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

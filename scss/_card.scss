@@ -18,7 +18,7 @@
   .card__username {
     font-weight: 600;
     font-size: 0.9rem;
-    text-align: center;
+    text-align: left;
   }
   .card__featured {
     font-weight: 500;
@@ -37,18 +37,7 @@
 
 .card__middle {
   @extend %flexColumn;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%;
-  padding: 8%;
-  background-image: linear-gradient(
-      179.86deg,
-      rgba(0, 0, 0, 0) 35.11%,
-      #000000 99.85%
-    ),
-    url(../assets/backimg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include card;
 
   .card__title {
     font-size: 1.5rem;
@@ -62,6 +51,26 @@
     color: $fontWhite;
     padding-top: 3%;
   }
+}
+
+.card__middle--img2 {
+  @extend .card__middle;
+  background-image: linear-gradient(
+      179.86deg,
+      rgba(0, 0, 0, 0) 35.11%,
+      #000000 99.85%
+    ),
+    url(../assets/backimg3.png);
+}
+
+.card__middle--img3 {
+  @extend .card__middle;
+  background-image: linear-gradient(
+      179.86deg,
+      rgba(0, 0, 0, 0) 35.11%,
+      #000000 99.85%
+    ),
+    url(../assets/backimg2.png);
 }
 
 ///////////////////////////////////////////////// CARD FOOTER ///////////////////////////////////////////////////
