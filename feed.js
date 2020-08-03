@@ -18,6 +18,7 @@
           `https://api.madbarz.com/api/jobs/GetFeed?skip=0&skipFeatured=5&take=10`,
           {
             headers: {
+              "Access-Control-Allow-Origin": "*",
               Authorization: `Bearer ${token}`
             }
           }
