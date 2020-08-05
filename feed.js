@@ -18,7 +18,6 @@
           `https://api.madbarz.com/api/jobs/GetFeed?skip=0&skipFeatured=5&take=10`,
           {
             headers: {
-              "Access-Control-Allow-Origin": "*",
               Authorization: `Bearer ${token}`
             }
           }
@@ -28,7 +27,7 @@
           this.setState({
             feed: response.data
           });
-          console.log(response);
+          console.log("response from API ^^");
         })
         .catch((err) => {
           console.log(err);
@@ -37,14 +36,14 @@
 
     render() {
       const { feed } = this.state;
+      console.log(feed);
 
       if (!feed) return <p>List is blank</p>;
 
       return (
-        <div className="names__container">
-          {/* {feed.map((feed) => (
-            <div className="single_name" key={feed._id}>
-              {feed.byId.user}&nbsp;
+        <div className="feed__rendered">
+          {/* {this.state.feed.map((feed) => (
+            <div className="card__container" key={feed._id}>
             </div>
           ))} */}
         </div>
