@@ -12,6 +12,8 @@ No installation is required, but the app is designed for mobile devices primaral
 
 ## Usage
 
+Deployed app: https://tetateuta.github.io/madbarz/
+
 App currently uses dummy data, but there is a React component (feed.js) which is fetching data from API and logging it into a console.
 
 ## Contributing
