@@ -40,14 +40,7 @@
 
       if (!feed) return <p>List is blank</p>;
 
-      return (
-        <div className="feed__rendered">
-          {/* {this.state.feed.map((feed) => (
-            <div className="card__container" key={feed._id}>
-            </div>
-          ))} */}
-        </div>
-      );
+      return <div className="feed__rendered"></div>;
     }
   }
 
